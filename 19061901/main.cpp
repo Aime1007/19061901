@@ -11,9 +11,9 @@
 using namespace std;
 int main() {
     // insert code here...
-    int a,b;
-    ofstream ljlout("/Users/s20181106275/Desktop/project0619/190619out.txt ");
-    ifstream ljlin("/Users/s20181106275/Desktop/project0619/190619in.txt ");
+    int a=0,b=0;
+    ofstream ljlout("/Users/s20181106275/Desktop/project0619/190619out.txt");
+    ifstream ljlin("/Users/s20181106275/Desktop/project0619/190619in.txt");
     if(ljlin.is_open())
     {
         cout<<"file OK"<<endl;
