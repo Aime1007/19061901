@@ -7,9 +7,27 @@
 //
 
 #include <iostream>
-
-int main(int argc, const char * argv[]) {
+#include <fstream>
+using namespace std;
+int main() {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    int a,b;
+    ofstream ljlout("/Users/s20181106275/Desktop/project0619/190619out.txt ");
+    ifstream ljlin("/Users/s20181106275/Desktop/project0619/190619in.txt ");
+    if(ljlin.is_open())
+    {
+        cout<<"file OK"<<endl;
+        ljlin >> a >> b;
+        cout << a <<"   "<< b <<endl;
+        ljlin.close();
+    }
+    
+    if (ljlout.is_open())
+    {
+        ljlout <<"c="<< a+b <<endl;
+        cout <<"c="<< a+b <<endl;
+        ljlout.close();
+    }
+    
     return 0;
 }
