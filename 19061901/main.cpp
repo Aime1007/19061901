@@ -45,8 +45,8 @@ int main() {
             string a;
             int b;
             stuin >> a >> b;
-            stu[i]=
-            stu01.get(a,b);
+            stu[i]=student(a,b);
+        
         }
         
         stuin.close();
@@ -57,7 +57,7 @@ int main() {
     {
         cout<<"file OK"<<endl;
         //ljlout << <<endl;
-        stu01.show();
+        //stu01.show();
         ljlout.close();
     }
     
