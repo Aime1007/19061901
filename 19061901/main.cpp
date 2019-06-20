@@ -9,23 +9,55 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
+
+class student{
+public:
+    stu(){}
+    void get(string a,int b){
+        name = a;
+        num = b;
+    }
+    void show()
+    {
+        cout << name <<" "<<num;
+    }
+private:
+    string name;
+    int num;
+    
+};
+
+class judge{
+public:
+private:
+};
 int main() {
-    // insert code here...
-    int a=0,b=0;
+    //int a=0,b=0;
+    student stu[4];
+    ifstream stuin("/Users/s20181106275/Desktop/project0619/190619in01.txt");
+    ifstream judgein("/Users/s20181106275/Desktop/project0619/190619in01.txt");
     ofstream ljlout("/Users/s20181106275/Desktop/project0619/190619out.txt");
-    ifstream ljlin("/Users/s20181106275/Desktop/project0619/190619in.txt");
-    if(ljlin.is_open())
+    if(stuin.is_open())
     {
         cout<<"file OK"<<endl;
-        ljlin >> a >> b;
-        cout << a <<"   "<< b <<endl;
-        ljlin.close();
+        for(int i=0; i<4; i++)
+        {
+            string a;
+            int b;
+            stuin >> a >> b;
+            stu[i]=
+            stu01.get(a,b);
+        }
+        
+        stuin.close();
     }
+    
     
     if (ljlout.is_open())
     {
-        ljlout <<"c="<< a+b <<endl;
-        cout <<"c="<< a+b <<endl;
+        cout<<"file OK"<<endl;
+        //ljlout << <<endl;
+        stu01.show();
         ljlout.close();
     }
     
