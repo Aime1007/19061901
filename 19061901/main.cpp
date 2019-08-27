@@ -46,7 +46,6 @@ int main() {
             int b;
             stuin >> a >> b;
             stu[i]=student(a,b);
-        
         }
         
         stuin.close();
